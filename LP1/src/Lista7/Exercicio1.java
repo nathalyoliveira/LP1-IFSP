@@ -16,20 +16,22 @@ public class Exercicio1 {
 		for(int i = 1; i<=5;++i)
 			nome.add(sc.next());	
     
+		
+	// Percorre a coleÃ§Ã£o na ordem inversa dos elementos que foram inseridos
 	   ListIterator li = nome.listIterator(nome.size());
 
 	   while(li.hasPrevious()) {
 	   System.out.println(li.previous());
 	 }
 		
-/*	    //Percorrendo o array mostrando a posição
+/*	    //Percorrendo o array mostrando a posiÃ§Ã£o
 		Integer i = 1;
 	    for (String n: nome) {
-	      System.out.printf("Posição %d- %s\n", i, n);
+	      System.out.printf("PosiÃ§Ã£o %d- %s\n", i, n);
 	      i++;
 	    }
 
-        //Percorrendo o array ao contrário (não funciona)   
+        //Percorrendo o array ao contrÃ¡rio (nÃ£o funciona)   
 		for(Integer i = nome.size(); i>0;i--)
 		System.out.println(nome.get(i));
 */		
